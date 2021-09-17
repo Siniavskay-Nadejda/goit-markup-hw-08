@@ -33,13 +33,14 @@
   color: rgba(255, 255, 255, 0.6);
 }
 .footer-flex {
-  display: flex;
+  align-items: center;
+  text-align: center;
   &:not(:first-child) {
-    margin-left: 70px;
   }
 }
 
 .footer-title {
+  text-align: center;
   margin-bottom: 20px;
   font-style: normal;
   font-weight: 700;
@@ -50,10 +51,10 @@
   color: #ffffff;
 }
 .footer-cut {
-  width: 231px;
+  margin-bottom: 60px;
 }
 .form-block {
-  margin-left: 90px;
+  margin-top: 60px;
 }
 .form-futer {
   display: flex;
@@ -91,6 +92,7 @@
   right: 28px;
 }
 .input-form-futer {
+  margin-bottom: 20px;
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -115,14 +117,15 @@
 }
 .social__footer {
   display: flex;
+  justify-content: center;
   padding: 0px;
   margin-top: 16px;
 }
 .social__element {
   display: flex;
   &:not(:last-child) {
-  margin-right: 10px;
-}
+    margin-right: 10px;
+  }
 }
 
 .social__link--color {
@@ -142,5 +145,3 @@
     fill: #ffffff;
   }
 }
-
-

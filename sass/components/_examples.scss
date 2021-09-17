@@ -6,9 +6,14 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: $title-text-color;
+  @media (max-width: 1200px) {
+    display: none;
+  }
 }
 .section-tab {
+  display: flex;
   padding-top: 0px;
+  display: none;
 }
 .work-examples {
   display: flex;
@@ -37,6 +42,9 @@
   justify-content: center;
   bottom: 0px;
   right: 0px;
+  @media (max-width: 1200px) {
+    display: none;
+  }
 }
 .work-examples__element {
   margin-right: 30px;

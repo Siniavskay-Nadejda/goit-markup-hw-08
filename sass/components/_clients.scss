@@ -1,16 +1,18 @@
 .clients {
   display: flex;
+  flex-wrap: wrap;
   padding-left: 0px;
+  margin: -15px;
 }
 
 .clients__icon {
   display: flex;
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
+
+  margin: 15px;
 }
+
 .clients__hover {
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: solid#AFB1B8 1px;
   border-radius: 2px;
