@@ -1,0 +1,27 @@
+.clients {
+  display: flex;
+  padding-left: 0px;
+}
+
+.clients__icon {
+  display: flex;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.clients__hover {
+  width: 170px;
+  height: 92px;
+  border: solid#AFB1B8 1px;
+  border-radius: 2px;
+  padding: 16px 32px;
+  fill: #afb1b8;
+  transition-property: border, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border: solid#2196f3 1px;
+    fill: $accent-text-color;
+  }
+}

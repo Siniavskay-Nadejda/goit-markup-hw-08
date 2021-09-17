@@ -1,0 +1,28 @@
+.social-card {
+  display: flex;
+  padding: 0px 32px 30px 32px;
+  margin-top: 16px;
+}
+.social__element {
+  display: flex;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.social__link {
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  border-radius: 100px;
+  fill: #afb1b8;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border-radius: 100px;
+    background-color: #2196f3;
+    fill: #ffffff;
+  }
+}
