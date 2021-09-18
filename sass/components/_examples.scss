@@ -6,9 +6,6 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: $title-text-color;
-  @media (max-width: 1200px) {
-    display: none;
-  }
 }
 .section-tab {
   display: flex;
