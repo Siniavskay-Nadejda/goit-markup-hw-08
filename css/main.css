@@ -501,6 +501,12 @@ nav {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-left: 0px;
   margin: 0px;
 }
@@ -513,14 +519,12 @@ nav {
 
 @media (max-width: 767px) {
   .clients__icon {
-    width: calc((100% -2 * 30) / 2);
+    width: calc((75%-4 * 15) / 2);
     margin: 15px;
   }
 }
 
 .clients__hover {
-  width: 170px;
-  height: 92px;
   border: solid #AFB1B8 1px;
   border-radius: 2px;
   padding: 16px 32px;

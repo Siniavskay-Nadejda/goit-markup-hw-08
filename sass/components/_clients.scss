@@ -1,6 +1,8 @@
 .clients {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   padding-left: 0px;
   margin: 0px;
 }
@@ -8,14 +10,12 @@
 .clients__icon {
   display: flex;
   @media (max-width: 767px) {
-    width: calc((100% -2 * 30) / 2);
+    width: calc((75%-4 * 15) / 2);
     margin: 15px;
   }
 }
 
 .clients__hover {
-  width: 170px;
-  height: 92px;
   border: solid#AFB1B8 1px;
   border-radius: 2px;
   padding: 16px 32px;
