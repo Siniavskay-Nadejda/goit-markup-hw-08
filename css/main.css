@@ -15,14 +15,12 @@
 @media (min-width: 768px) {
   .container {
     width: 768px;
-    background-color: seagreen;
   }
 }
 
 @media (min-width: 1200px) {
   .container {
     width: 1200px;
-    background-color: teal;
   }
 }
 
@@ -241,6 +239,73 @@ nav {
 
 .contacts-nav__tel-icon {
   margin-right: 10px;
+}
+
+.menu-toggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  min-height: 40px;
+  min-width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  background-color: yellow;
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  z-index: 999;
+  background-color: #ffffff;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.menu-container.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.menu-container-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  color: #212121;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-container-link:hover, .menu-container-link:focus {
+  color: #2196f3;
 }
 
 .hero {
@@ -501,30 +566,19 @@ nav {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   padding-left: 0px;
-  margin: 0px;
 }
 
 .clients__icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-@media (max-width: 767px) {
-  .clients__icon {
-    width: calc((75%-4 * 15) / 2);
-    margin: 15px;
-  }
+  width: calc((100%-4 * 15) / 2);
 }
 
 .clients__hover {
+  width: 170px;
+  height: 92px;
   border: solid #AFB1B8 1px;
   border-radius: 2px;
   padding: 16px 32px;

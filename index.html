@@ -28,6 +28,12 @@
             <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
             <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
         </ul>
+        <button  class=" menu-toggle js-open-menu  " aria-expanded="false" aria-controls="mobile-menu">
+            <svg width="40" height="40" aria-label="Пееключатель мобильного меню">
+               
+                <use class="icon-menu" href="./images/menu.svg#icon-menu"></use>
+            </svg>
+        </button>
 </nav>
    
          <ul class="contacts-nav list">
@@ -218,7 +224,7 @@
     <H2 class="section-title">Постоянные клиенты</H2>
   <ul class="clients list ">
   <li class="clients__icon"> 
-      <a href="" class="clients__hover"> <svg width="106" height="60">
+      <a href=""class="clients__hover"><svg width="106" height="60">
         <use href="./images/sprite.svg#icon-group"></use>
     </svg></a>
   </li> 
@@ -228,7 +234,7 @@
         </svg></a>
 </li>
 <li class="clients__icon">
-    <a href="" class="clients__hover"> <svg width="106" height="60">
+    <a href="" class="clients__hover"> <svg width="106" height="60" class="clients__svg">
             <use href="./images/sprite.svg#icon-group-2"></use>
         </svg></a>
 </li>
@@ -349,8 +355,29 @@
     </form>
     </div>
 </div>
+<div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu">
+    <svg width="40" height="40" aria-label="Пееключатель мобильного меню">
+        <use  href="./images/menu.svg#icon-close"></use></svg>
+    </button>
+    <ul class="mobile-menu list">
+       <li><a class="menu-container-link">Студия</a></li>
+    <li><a class="menu-container-link">Портфолио</a></li>
+    <li><a class="menu-container-link">Контакты</a></li>
+    <li class="contacts-nav__item ">
+         <a href="info@devstudio.com" class="contacts-nav__mail">info@devstudio.com </a></li>
+        <li class="contacts-nav__item"><a href="+380961111111" class="contacts-nav__mail">
+                    +38 096 111 11 11</a></li>
+        
+
+
+</div>
 <script src="./js/modal.js"></script>
-<script src="js/mobile-menu.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+
+<script src="./js/mobail-menu.js"></script>
 
    </body>
 </html>
