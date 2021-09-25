@@ -1,15 +1,25 @@
 .clients {
+  @media (max-width: 1199px) {
+    flex-wrap: wrap;
+  }
   display: flex;
-  flex-wrap: wrap;
   padding-left: 0px;
+  margin: -15px;
 }
 
 .clients__icon {
   display: flex;
-  width: calc((100%-4 * 15) / 2);
+  margin: 15px;
 }
 .clients__hover {
-  width: 170px;
+  @media (min-width: 768px) {
+    width: 226px;
+  }
+  @media (min-width: 1200px) {
+    width: 170px;
+  }
+  align-items: center;
+  width: 210px;
   height: 92px;
   border: solid#AFB1B8 1px;
   border-radius: 2px;

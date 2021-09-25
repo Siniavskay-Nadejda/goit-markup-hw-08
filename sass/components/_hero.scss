@@ -5,8 +5,14 @@
 }
 
 .hero__title {
+  @media (max-width: 1199px) {
+    font-style: normal;
+    font-size: 26px;
+    line-height: 1.6;
+    line-height: 138%;
+  }
   margin-bottom: 30px;
-  font-style: 400;
+  font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
@@ -33,13 +39,61 @@
 
 /* Банер */
 .overlay {
-  max-width: 1600px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/hiro.jpg);
+  @media (max-width: 768px) {
+    width: 480px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero480-400x1.jpg);
+    background-size: 480 400;
+    @media screen and(min-device-pixel-ratio:2),
+      screen and(resolution:192dpi),
+      screen and(resolution:2dppx) {
+      .overlay {
+        background-image: url(../images/hero480-400x2.jpg);
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    width: 768px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero768-400x1.jpg);
+    background-size: 768 400;
+    @media screen and(min-device-pixel-ratio:2),
+      screen and(resolution:192dpi),
+      screen and(resolution:2dppx) {
+      .overlay {
+        background-image: url(../images/hero768-400x2.jpg);
+      }
+    }
+  }
+  @media (min-width: 1200px) {
+    width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero1600-600x1.jpg);
+    background-size: 1600 600;
+    @media screen and(min-device-pixel-ratio:2),
+      screen and(resolution:192dpi),
+      screen and(resolution:2dppx) {
+      .overlay {
+        background-image: url(../images/hero1600-600x2.jpg);
+      }
+    }
+  }
 }

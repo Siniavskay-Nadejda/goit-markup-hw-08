@@ -27,6 +27,12 @@
                         <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link current">Портфолио</a></li>
                         <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
                     </ul>
+                    <button class=" menu-toggle js-open-menu  " aria-expanded="false" aria-controls="mobile-menu">
+                        <svg width="40" height="40" aria-label="Пееключатель мобильного меню">
+                    
+                            <use class="icon-menu" href="./images/menu.svg#icon-menu"></use>
+                        </svg>
+                    </button>
                 </nav>
     
                 <ul class="contacts-nav list">
@@ -182,8 +188,8 @@
     </div>
 </section>
 </main>
-<footer class="contacts">
-    <div class=" container footer-flex">
+<footer class="container contacts">
+    <div class="  footer-flex">
         <div class="footer-cut">
             <a href="/" class="logo">Web<samp class="logo__site--color">Studio</samp></a>
             <address class="address">
@@ -193,8 +199,8 @@
             </address>
         </div>
 
-        <div class="footer-flex ">
-            <section>
+        <div class="footer-flex-set ">
+            <section class="footer-tablet">
                 <h2 class="footer-title">присоединяйтесь</h2>
                 <ul class="list social__footer">
 
@@ -232,7 +238,36 @@
 
     </form>
 </footer>
-    
+<div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu">
+        <svg width="40" height="40" aria-label="Пееключатель мобильного меню">
+            <use href="./images/menu.svg#icon-close"></use>
+        </svg>
+    </button>
+    <ul class="mobile-menu list">
+        <li><a href="./index.html" class="menu-container-link">Студия</a></li>
+        <li><a href="./portfolio.html" class="menu-container-link">Портфолио</a></li>
+        <li><a class="menu-container-link">Контакты</a></li>
+        <li class="contacts-nav__item"><a href="+380961111111" class="contacts-nav__mail--color">
+                +38 096 111 11 11</a></li>
+        <li class="contacts-nav__item ">
+            <a href="info@devstudio.com" class="contacts-nav__mail--size">info@devstudio.com </a>
+        </li>
+        <ul class="social-menu  list">
+            <li><a href="" class="social-menu__element">Instagram <span class="social-menu__element--decor">|</span></a>
+            </li>
+            <li><a href="" class="social-menu__element">Twitter <span class="social-menu__element--decor">|</span></a>
+            </li>
+            <li><a href="" class="social-menu__element">Facebook <span class="social-menu__element--decor">|</span></a>
+            </li>
+            <li><a href="" class="social-menu__element">LinkedIn</a></li>
+        </ul>
+</div>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+
+<script src="./js/mobail-menu.js"></script>
    
 </body>
 </html>
