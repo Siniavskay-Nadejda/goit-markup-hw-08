@@ -7,6 +7,9 @@
   padding-left: 0px;
 }
 .team__element {
+  @media (max-width: 768px) {
+    margin-bottom: 30px;
+  }
   @media (min-width: 768px) {
     margin: 15px;
   }
