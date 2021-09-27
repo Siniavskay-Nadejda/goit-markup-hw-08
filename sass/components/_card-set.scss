@@ -1,7 +1,6 @@
 .flex-set {
-  @media (max-width: 1600px) {
-    padding: 0px;
-  }
+  padding: 0px;
+
   @media (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
