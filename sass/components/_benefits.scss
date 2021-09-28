@@ -36,7 +36,9 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $title-text-color;
-  text-align: center;
+  @media (max-width: 767px) {
+    text-align: center;
+  }
 }
 .benefits__text {
   font-size: 14px;
